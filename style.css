@@ -1,0 +1,371 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.658);
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content:left;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.658);
+      position: fixed;
+      z-index: 1000;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .navbar li{
+      padding: 50px;
+      list-style: none;
+      font-size: 18px;
+    }
+
+    .navbar a{
+      color: black;
+      text-decoration: none;
+      transition: font-size 0.4s ease;
+    }
+
+    .navbar a:hover{
+      color: rgb(177, 14, 41);
+      font-size: 20px;
+    }
+
+    .imagen-navbar{
+      width: 110px;
+    }
+
+    .box1 img{
+      width: 100%;
+      height: 450px;
+      filter: blur(2px);
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .box1 p{
+      position: absolute;
+      top: 260px;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 75px;
+      font-weight: bold;
+      text-shadow: 2px 4px 15px rgba(214, 5, 5, 0.788);
+    }
+
+    .ranking {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    .tabla th{
+      border: 1px solid #ddd;
+      padding: 8px;
+      background-color: #f2f2f2;
+    }
+    
+    .tabla td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    .tabla tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .tabla tbody tr:hover{
+      transform: scale(1.03);
+      background-color: rgb(255, 60, 60);
+      font-weight: bold;
+      color: white;
+    }
+
+    .votacion{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: rgb(82, 0, 0);
+      margin: 220px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 30px;
+      border-radius: 20px 20px 80px 80px;
+    }
+
+    .votacion h1{
+      position: absolute;
+      top: 955px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 0, 0);
+      font-size: 75px;
+      font-weight: bold;
+      text-shadow: 8px 10px 10px rgba(0, 0, 0, 0.788);
+    }
+
+    .post-card {
+      position: relative;
+      width: 300px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      overflow: hidden;
+      float: left;
+      box-shadow: 12px 9px 30px rgba(34, 34, 34, 0.671);
+      margin: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 25px 5px red;
+      transition: transform 1s ease;
+    }
+
+    .post-card img {
+      display: block;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .post-card .content {
+      padding: 20px;
+    }
+
+    .post-card h2 {
+      font-size: 29px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding: 2px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .post-card h3{
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 17px;
+      color: rgb(248, 2, 2);
+      font-weight: bold;
+    }
+
+    .post-card p {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 102, 204, 1); /* Azul medio */
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    
+    .post-card-number {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(255, 225, 225, 0.685);
+      font-weight: bold;
+      padding: 5px 23px;
+      border-radius: 0 0px 10px 0px;
+      color: rgb(218, 0, 0);
+      font-size: 50px;
+    }
+
+    .post-card:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 920px){
+      .navbar li{
+        padding: 35px;
+        font-size: 16px;
+      }
+
+      .box1 p{
+        left: 40%;
+        font-size: 75px;
+      }
+    }
+
+    @media (max-width: 900px){
+      .votacion{
+        margin: 150px;
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 920px){
+      .navbar li{
+        padding: 15px;
+        font-size: 16px;
+      }
+    }
+    
+    @media (max-width: 770px){
+      .votacion{
+        margin: 100px;
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 660px){
+      .navbar li{
+        padding: 8px;
+        font-size: 15px;
+      }
+
+      .votacion{
+        margin: 50px;
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 550px){
+      .imagen-navbar{
+        width: 80px;
+      }
+
+      .navbar li{
+        padding: 5px;
+        font-size: 14px;
+      }
+
+      .votacion{
+        margin: 15px;
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .votacion{
+        margin: 5px;
+        margin-top: 50px;
+      }
+      
+      .post-card {
+        margin: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 440px){
+      .box1 p{
+        left: 50%;
+        font-size: 70px;
+        text-align: center;
+      }
+
+      .imagen-navbar{
+        width: 70px;
+      }
+
+      .navbar li{
+        padding: 5px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 400px){
+      .box1 p{
+        left: 50%;
+        font-size: 60px;
+        text-align: center;
+      }
+
+      .votacion h1{
+        font-size: 65px;
+      }
+
+      .imagen-navbar{
+        width: 55px;
+      }
+
+      .navbar li{
+        padding: 3px;
+        font-size: 12px;
+      }
+
+      .navbar a:hover{
+        font-size: 15px;
+      }
+
+      .votacion{
+        border-radius: 20px 20px 20px 20px;
+      }
+    }
+
+    @media (max-width: 380px){
+      .votacion h1{
+        margin-top: 80px;
+        font-size: 65px;
+      }
+
+      .post-card {
+        width: 250px;
+      }
+
+      .post-card img{
+        height: 200px;
+      }
+
+      .votacion{
+        border-radius: 20px 20px 20px 20px;
+      }
+    }
+
+    @media (max-width: 300px){
+      .navbar li{
+        padding: 2px;
+        font-size: 10px;
+      }
+
+      .box1 p{
+        left: 50%;
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .votacion h1{
+        margin-top: 95px;
+        font-size: 50px;
+      }
+
+      .votacion{
+        border-radius: 20px 20px 20px 20px;
+      }
+    }
+
+    @media (max-width: 280px){
+      .post-card-number {
+        padding: 5px 20px;
+        font-size: 40px;
+      }
+
+      .tabla{
+        margin-left: -10px;
+      }
+    }
